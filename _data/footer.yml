@@ -1,6 +1,6 @@
 - links:
-  - name: Production
-    link: /production/
+  - name: Products
+    link: /products/
   - name: Blog
     link: https://vietstack.wordpress.com/
     new_window: true
