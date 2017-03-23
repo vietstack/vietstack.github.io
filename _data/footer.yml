@@ -2,7 +2,8 @@
   - name: Pricing
     link: /pricing/
   - name: Blog
-    link: /blog/
+    link: https://vietstack.wordpress.com/
+    new_window: true
   - name: About
     link: /about/
   - name: Contact
