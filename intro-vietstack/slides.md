@@ -3,19 +3,18 @@
 
 <img src="images/logo.png" width="20%" height="20%" />
 
-contact@vietopenstack.org
 
-<http://www.vietopenstack.org/>
+<http://www.vietstack.vn/>
 
 ---
 
-# /me
+# /about
 
-- Name: [Cong To-Thanh][1]
-- [Vietnam][1] OpenStack Community Organizer
-- Twitter: [@tothanhcong][1]
-- Email: [tcvn1985@gmail.com][1]
-- GitHub: [https://github.com/congto][1]
+- Name: [VietStack][1]
+- [Vietnam][1] OpenStack Community 
+- FB: http://facebook.com/groups/vietstack
+- GitHub: https://github.com/vietstacker
+- WebSite: http://vietstack.vn
 
 [1]: http://
 
@@ -55,9 +54,9 @@ contact@vietopenstack.org
 
 ## Connect
 - FB: http://facebook.com/groups/vietstack
-- WebSite: http://vietopenstack.org
+- WebSite: http://vietstack.vn
 - TW: http://twitter.com/VietStack
-- Blog: http://www.vietstack.com
+- Blog: http://www.blog.vietstack.vn
 - Git: http://github.com/vietstacker
 - Meetup: http://www.meetup.com/VietOpenStack/
 - Email: [contact@vietopenstack.org][]
