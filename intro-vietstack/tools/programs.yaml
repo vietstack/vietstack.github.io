@@ -1,0 +1,386 @@
+Compute:
+  codename: Nova
+  ptl: Michael Still (mikal)
+  mission: >
+    To implement services and associated libraries to provide massively
+    scalable, on demand, self service access to compute resources, including
+    bare metal, virtual machines, and containers.
+  url: https://wiki.openstack.org/wiki/Nova
+  projects:
+    - repo: openstack/nova
+      integrated-since: austin
+    - repo: openstack/python-novaclient
+    - repo: openstack/nova-specs
+
+Object Storage:
+  codename: Swift
+  ptl: John Dickinson (notmyname)
+  url: https://wiki.openstack.org/wiki/Swift
+  projects:
+    - repo: openstack/swift
+      integrated-since: austin
+    - repo: openstack/python-swiftclient
+    - repo: openstack/swift-bench
+    - repo: openstack/swift-specs
+
+Image Service:
+  codename: Glance
+  ptl: Mark Washenberger (markwash)
+  mission: >
+    To provide a service where users can upload and discover data assets that
+    are meant to be used with other services, like images for Nova and
+    templates for Heat.
+  url: https://wiki.openstack.org/wiki/Glance
+  projects:
+    - repo: openstack/glance
+      integrated-since: bexar
+    - repo: openstack/glance-specs
+    - repo: openstack/python-glanceclient
+    - repo: openstack/glance.store
+
+Identity:
+  codename: Keystone
+  ptl: Dolph Mathews (dolphm)
+  mission: >
+    To facilitate API client authentication, service discovery, distributed
+    multi-tenant authorization, and auditing.
+  url: https://wiki.openstack.org/wiki/Keystone
+  projects:
+    - repo: openstack/keystone
+      integrated-since: essex
+    - repo: openstack/keystone-specs
+    - repo: openstack/python-keystoneclient
+    - repo: openstack/keystonemiddleware
+    - repo: openstack/pycadf
+
+Dashboard:
+  codename: Horizon
+  ptl: David Lyle (david-lyle)
+  mission: >
+    To provide an extensible unified web based user interface for all
+    integrated OpenStack services.
+  url: https://wiki.openstack.org/wiki/Horizon
+  projects:
+    - repo: openstack/horizon
+      integrated-since: essex
+    - repo: openstack/django_openstack_auth
+    - repo: openstack/tuskar-ui
+
+Networking:
+  codename: Neutron
+  ptl: Kyle Mestery (mestery)
+  mission: >
+    To implement services and associated libraries to provide on-demand,
+    scalable, and technology-agnostic network abstraction.
+  url: https://wiki.openstack.org/wiki/Neutron
+  projects:
+    - repo: openstack/neutron
+      integrated-since: folsom
+    - repo: openstack/python-neutronclient
+    - repo: openstack/neutron-specs
+
+Block Storage:
+  codename: Cinder
+  ptl: John Griffith (jgriffith)
+  mission: >
+    To implement services and libraries to provide on-demand, self-service
+    access to Block Storage resources via abstraction and automation on top of
+    other block storage devices.
+  url: https://wiki.openstack.org/wiki/Cinder
+  projects:
+    - repo: openstack/cinder
+      integrated-since: folsom
+    - repo: openstack/cinder-specs
+    - repo: openstack/python-cinderclient
+
+Telemetry:
+  codename: Ceilometer
+  ptl : Eoghan Glynn (eglynn)
+  url: https://wiki.openstack.org/wiki/Ceilometer
+  mission: >
+    To reliably collect measurements of the utilization of the physical and
+    virtual resources comprising deployed clouds, persist these data for
+    subsequent retrieval and analysis, and trigger actions when defined
+    criteria are met.
+  projects:
+    - repo: openstack/ceilometer
+      incubated-since: grizzly
+      integrated-since: havana
+    - repo: openstack/ceilometer-specs
+    - repo: openstack/python-ceilometerclient
+
+Orchestration:
+  codename: Heat
+  ptl: Zane Bitter (zaneb)
+  url: https://wiki.openstack.org/wiki/Heat
+  projects:
+    - repo: openstack/heat
+      incubated-since: grizzly
+      integrated-since: havana
+    - repo: openstack/python-heatclient
+    - repo: openstack/heat-cfntools
+    - repo: openstack/heat-specs
+    - repo: openstack/heat-templates
+    - repo: openstack-dev/heat-cfnclient
+
+Database Service:
+  codename: Trove
+  ptl: Nikhil Manchanda (SlickNik)
+  mission: >
+    To provide scalable and reliable Cloud Database as a Service functionality
+    for both relational and non-relational database engines, and to continue to
+    improve its fully-featured and extensible open source framework.
+  url: https://wiki.openstack.org/wiki/Trove
+  projects:
+    - repo: openstack/trove
+      incubated-since: havana
+      integrated-since: icehouse
+    - repo: openstack/python-troveclient
+    - repo: openstack/trove-integration
+
+Bare metal:
+  codename: Ironic
+  ptl: Devananda van der Veen (devananda)
+  mission: >
+    To produce an OpenStack service and associated python libraries capable of
+    managing and provisioning physical machines, and to do this in a
+    security-aware and fault-tolerant manner.
+  url: https://wiki.openstack.org/wiki/Ironic
+  projects:
+    - repo: openstack/ironic
+      incubated-since: havana
+    - repo: openstack/ironic-specs
+    - repo: openstack/python-ironicclient
+    - repo: openstack/ironic-python-agent
+
+Common Libraries:
+  codename: Oslo
+  ptl: Doug Hellmann (dhellmann)
+  mission: >
+    To produce a set of python libraries containing code shared by OpenStack
+    projects. The APIs provided by these libraries should be high quality,
+    stable, consistent, documented and generally applicable.
+  url: https://wiki.openstack.org/wiki/Oslo
+  projects:
+    - repo: openstack/cliff
+    - repo: openstack/oslo.concurrency
+    - repo: openstack/oslo.config
+    - repo: openstack/oslo.db
+    - repo: openstack/oslo.i18n
+    - repo: openstack/oslo-incubator
+    - repo: openstack/oslo.log
+    - repo: openstack/oslo.messaging
+    - repo: openstack/oslo.middleware
+    - repo: openstack/oslo.rootwrap
+    - repo: openstack/oslo.serialization
+    - repo: openstack/oslo-specs
+    - repo: openstack/oslosphinx
+    - repo: openstack/oslotest
+    - repo: openstack/oslo.utils
+    - repo: openstack/oslo.version
+    - repo: openstack/oslo.vmware
+    - repo: openstack/stevedore
+    - repo: openstack/taskflow
+    - repo: openstack-dev/cookiecutter
+    - repo: openstack-dev/oslo-cookiecutter
+    - repo: openstack-dev/hacking
+    - repo: openstack-dev/pbr
+
+Infrastructure:
+  codename: Infra
+  ptl: James E. Blair (jeblair)
+  url: https://wiki.openstack.org/wiki/Infrastructure
+  mission: >
+    Develop and maintain the tooling and infrastructure needed to support the
+    development process and general operation of the OpenStack project.
+  projects:
+    - repo: openstack-dev/openstack-nose
+    - repo: openstack-infra/activity-board
+    - repo: openstack-infra/askbot-theme
+    - repo: openstack-infra/bugdaystats
+    - repo: openstack-infra/config
+    - repo: openstack-infra/devstack-gate
+    - repo: openstack-infra/elastic-recheck
+    - repo: openstack-infra/gear
+    - repo: openstack-infra/gearman-plugin
+    - repo: openstack-infra/gerrit
+    - repo: openstack-infra/gerritbot
+    - repo: openstack-infra/gerritlib
+    - repo: openstack-infra/gerrit-powered-agenda
+    - repo: openstack-infra/git-review
+    - repo: openstack-infra/gitdm
+    - repo: openstack-infra/groups
+    - repo: openstack-infra/groups-static-pages
+    - repo: openstack-infra/infra-manual
+    - repo: openstack-infra/infra-specs
+    - repo: openstack-infra/jeepyb
+    - repo: openstack-infra/jenkins-job-builder
+    - repo: openstack-infra/lodgeit
+    - repo: openstack-infra/meetbot
+    - repo: openstack-infra/nodepool
+    - repo: openstack-infra/nose-html-output
+    - repo: openstack-infra/odsreg
+    - repo: openstack-infra/openstackid
+    - repo: openstack-infra/os-loganalyze
+    - repo: openstack-infra/publications
+    - repo: openstack-infra/puppet-apparmor
+    - repo: openstack-infra/puppet-dashboard
+    - repo: openstack-infra/puppet-storyboard
+    - repo: openstack-infra/puppet-vcsrepo
+    - repo: openstack-infra/puppet-yum
+    - repo: openstack-infra/puppet-zuul
+    - repo: openstack-infra/pypi-mirror
+    - repo: openstack-infra/releasestatus
+    - repo: openstack-infra/reviewday
+    - repo: openstack-infra/reviewstats
+    - repo: openstack-infra/statusbot
+    - repo: openstack-infra/storyboard
+    - repo: openstack-infra/storyboard-webclient
+    - repo: openstack-infra/tripleo-ci
+    - repo: openstack-infra/zmq-event-publisher
+    - repo: openstack-infra/zuul
+    - repo: openstack-infra/zuul-packaging
+    - repo: openstack/openstack-planet
+
+Documentation:
+  ptl: Anne Gentle (annegentle)
+  mission: >
+    Provide documentation for core OpenStack projects to promote OpenStack.
+    Develop and maintain tools and processes to ensure quality, accurate
+    documentation. Treat documentation like OpenStack code.
+  url: https://wiki.openstack.org/wiki/Documentation
+  projects:
+    - repo: openstack/api-site
+    - repo: openstack/compute-api
+    - repo: openstack/docs-specs
+    - repo: openstack/identity-api
+    - repo: openstack/image-api
+    - repo: openstack/netconn-api
+    - repo: openstack/object-api
+    - repo: openstack/openstack-doc-tools
+    - repo: openstack/openstack-manuals
+    - repo: openstack/operations-guide
+    - repo: openstack/security-doc
+    - repo: openstack/training-guides
+    - repo: openstack/volume-api
+
+Quality Assurance:
+  codename: QA
+  ptl: Matthew Treinish (mtreinish)
+  mission: >
+    Develop, maintain, and initiate tools and plans to ensure the upstream
+    stability and quality of OpenStack, and its release readiness at any point
+    during the release cycle.
+  url: https://wiki.openstack.org/wiki/QA
+  projects:
+    - repo: openstack/tempest
+    - repo: openstack-dev/grenade
+    - repo: openstack/qa-specs
+    - repo: openstack-dev/devstack
+
+Deployment:
+  codename: TripleO
+  ptl: Robert Collins (lifeless)
+  mission: >
+    Develop and maintain tooling and infrastructure able to deploy OpenStack in
+    production, using OpenStack itself wherever possible.
+  url: https://wiki.openstack.org/wiki/TripleO
+  projects:
+    - repo: openstack/diskimage-builder
+    - repo: openstack/os-apply-config
+    - repo: openstack/os-cloud-config
+    - repo: openstack/os-collect-config
+    - repo: openstack/os-net-config
+    - repo: openstack/os-refresh-config
+    - repo: openstack/tripleo-heat-templates
+    - repo: openstack/tripleo-image-elements
+    - repo: openstack/tripleo-incubator
+    - repo: openstack/tripleo-specs
+    - repo: openstack/tuskar
+    - repo: openstack/python-tuskarclient
+
+Release cycle management:
+  ptl: Thierry Carrez (ttx)
+  mission: >
+    To organize the release cycle and the work necessary to produce coordinated
+    releases of the integrated components of OpenStack. To collect bugfix
+    backports and produce stable point releases for the previously-released
+    branch. To coordinate the publication of security patches and advisories
+    (OSSA) for security-supported branches.
+  url: https://wiki.openstack.org/wiki/Release_Cycle_Management
+  projects:
+    - repo: openstack/requirements
+    - repo: openstack-infra/release-tools
+
+Queue service:
+  codename: Zaqar
+  ptl: Kurt Griffiths (kgriffs)
+  mission: >
+    To produce an OpenStack message queueing API and service that affords a
+    variety of distributed application messaging patterns in an efficient,
+    scalable and highly-available manner, and to create and maintain associated
+    Python libraries and documentation.
+  url: https://wiki.openstack.org/wiki/Zaqar
+  projects:
+    - repo: openstack/zaqar
+      incubated-since: icehouse
+    - repo: openstack/zaqar-specs
+    - repo: openstack/python-zaqarclient
+
+Data processing service:
+  codename: Sahara
+  ptl: Sergey Lukjanov (SergeyLukjanov)
+  mission: >
+    To provide a scalable data processing stack and associated management
+    interfaces.
+  url: https://wiki.openstack.org/wiki/Sahara
+  projects:
+    - repo: openstack/sahara
+      incubated-since: icehouse
+      integrated-since: juno
+    - repo: openstack/python-saharaclient
+    - repo: openstack/sahara-dashboard
+    - repo: openstack/sahara-extra
+    - repo: openstack/sahara-image-elements
+    - repo: openstack/sahara-specs
+
+Key management service:
+  codename: Barbican
+  ptl: Jarret Raim (jraim)
+  mission: >
+    To produce a secret storage and generation system capable of providing key
+    management for services wishing to enable encryption features.
+  url: https://wiki.openstack.org/wiki/Barbican
+  projects:
+    - repo: openstack/barbican
+      incubated-since: juno
+    - repo: openstack/barbican-specs
+    - repo: openstack/python-barbicanclient
+    - repo: openstack/kite
+    - repo: openstack/python-kiteclient
+
+DNS Services:
+  codename: Designate
+  ptl: Kiall Mac Innes (kiall)
+  mission: >
+    To provide scalable, on demand, self service access to authoritative DNS
+    services, in technology-agnostic manner.
+  url: https://wiki.openstack.org/wiki/Designate
+  projects:
+    - repo: openstack/designate
+      incubated-since: juno
+    - repo: openstack/designate-specs
+    - repo: openstack/python-designateclient
+
+Shared File Systems:
+  codename: Manila
+  ptl: Ben Swartzlander (bswartz)
+  mission: >
+    To provide a set of services for management of shared file systems
+    in a multitenant cloud environment, similar to how OpenStack provides
+    for block-based storage management through the Block Storage program.
+  url: https://wiki.openstack.org/wiki/Manila
+  projects:
+    - repo: stackforge/manila
+      incubated-since: juno
+    - repo: stackforge/python-manilaclient
